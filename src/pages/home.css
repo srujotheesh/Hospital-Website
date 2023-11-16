@@ -1,0 +1,49 @@
+.topnav input[type=text] {
+    float: center;
+    padding: 6px;
+    border: 1px solid #ccc;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+  }
+  
+  hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    background-color: black;
+  }
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+.pic3{
+  background-color: rgb(57, 125, 227);filter:opacity(0.4);
+}
+.row1{
+  font-family: "Georgia, 'Times New Roman', Times, serif";
+}
+
+.caption1{
+  font-size: medium;font-family: 'Times New Roman', Times, serif;align-items: center;color: palevioletred;
+}
+.caption2{
+  font-size: medium;font-family: 'Times New Roman', Times, serif;color: palevioletred;
+}
+.caption3{
+  font-size: medium;font-family: 'Times New Roman', Times, serif;color: palevioletred;
+}
+
+.caption4{
+  font-size: medium;font-family: 'Times New Roman', Times, serif;color: palevioletred;
+}
+
+.caption5{
+  font-size: medium;font-family: 'Times New Roman', Times, serif;color: palevioletred;
+}
