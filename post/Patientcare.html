@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Care</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    .topnav input[type=text] {
+  float: center;
+  padding: 6px;
+  border: 1px solid #ccc;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  background-color: black;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+  </style>
+   <script>
+    $(document).ready(function(){
+      $('.dropdown-submenu a.test').on("click", function(e){
+        $(this).next('ul').toggle();
+        e.stopPropagation();
+        e.preventDefault();
+      });
+    });
+    </script>
+</head>
+<body style="font-family: 'Times New Roman', Times, serif;">
+ <div class="conatiner-fluid" style="background-color: rgb(57, 125, 227);">
+    <nav class="navbar navbar-expand-sm">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+            <p>Follow Us On SocialMedia</p>
+        </li>
+        <li class="nav-item">
+            &nbsp;<span class="fa fa-instagram"></span>
+            &nbsp;<span class="fa fa-twitter"></span>
+        &nbsp;<span class="fa fa-facebook"></span>
+        &nbsp;<span class="fa fa-linkedin">
+            &nbsp;<span class="fa fa-youtube">&nbsp;</span>
+        </span>
+        </li>
+        <li class="nav-item">
+            <div class="dropdown" style="background-color: rgb(57, 125, 227);">
+                <button type="button" class="btn  dropdown-toggle" data-bs-toggle="dropdown">
+                 English
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">தமிழ்</a></li>
+                  <li><a class="dropdown-item" href="#">
+                    हिंदी</a></li>
+                  <li><a class="dropdown-item" href="#">తెలుగు</a></li>
+                  <li><a class="dropdown-item" href="#">
+                    മലയാളം</a></li>
+                </ul>
+              </div>
+        </li>
+      </ul>
+    </nav>
+    </div>
+    <div class="topnav">
+       &nbsp;&nbsp; &nbsp; <img src="apollo.jpg"  width="180px" height="80px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <input type="text" placeholder="Search.."><button type="submit" style="border: none;" ><i class="fa fa-search" style="font-size:30px;background-color: white;"></i></button>
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="certify-award.jpg" width="180px" height="70px">
+    <img src="emergencyalert.png"class="rounded float-right" width="350px" height="80">
+    </div>
+    <br>
+    <hr>
+    <div>
+        <div class="btn-group" role="group">
+            <button id="btnGroupDrop1" type="button" class="btn btn-white dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              PATIENT CARE
+            </button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+              <a class="dropdown-item" href="#">Find a doctor
+               </a>
+              <a class="dropdown-item" href="#"> Apollo Surgery - Assured Prize
+                </a>
+              <a class="dropdown-item" href="#">Clinical Quality and Outcomes
+                </a>
+              <a class="dropdown-item" href="#">Service Excellence
+                </a>
+              <a class="dropdown-item" href="#">Patient Testimonials
+                </a>
+              <a class="dropdown-item" href="#">Value Added Services
+               </a>
+              <a class="dropdown-item" href="#"> Pay Online
+                </a>
+                <div class="dropdown-submenu dropend">
+                  <a  class="test" data-bs-toggle="dropdown" style="background-color: skyblue;">
+                      &nbsp;&nbsp;Health And Lifestyle
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Our Doctors Talk</a></li>
+                    <li><a class="dropdown-item active" href="#">Your life</a></li>
+                    <li><a class="dropdown-item disabled" href="#">Health Library</a></li>
+                    <li><a class="dropdown-item disabled" href="#">Lets talk Health</a></li>
+                  </ul>
+                </div>
+              <a class="dropdown-item" href="#">Media Feed</a>
+            </div>
+          </div>
+          <div class="btn-group" role="group">
+            <button id="btnGroupDrop1" type="button" class="btn btn-white dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             CENTRE OF EXCELLENCE
+            </button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+              <a class="dropdown-item" href="#">Cardiology
+                </a>
+              <a class="dropdown-item" href="#">Spine
+              </a>
+              <a class="dropdown-item" href="#"> ICU
+                </a>
+              <a class="dropdown-item" href="#">Neurology And Neurosurgery
+                </a>
+              <a class="dropdown-item" href="#">Preventive Skills 
+               </a>
+              <a class="dropdown-item" href="#"> Robotics
+                </a>
+              <a class="dropdown-item" href="#">Nephrology And Urology
+                </a>
+              <a class="dropdown-item" href="#">Ear,Nose and Throat
+                </a>
+              <a class="dropdown-item" href="#">Emergency
+               </a>
+              <a class="dropdown-item" href="#"> Transplants
+               </a>
+              <a class="dropdown-item" href="#"> Pulmonology</a>
+            </div>
+          </div>
+          <div class="btn-group" role="group">
+            <button id="btnGroupDrop1" type="button" class="btn btn-white dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              HEALTH INFORMATION
+            </button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+              <a class="dropdown-item" href="#">Disease And Conditions
+                </a>
+              <a class="dropdown-item" href="#">Test And Procedures
+               </a>
+              <a class="dropdown-item" href="#"> Medical Glossary Decoded
+                </a>
+              <a class="dropdown-item" href="#">Understanding Investigations</a>
+            </div>
+          </div>
+          <div class="btn-group" role="group">
+            <button id="btnGroupDrop1" type="button" class="btn btn-white dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              INTERNATIONAL PATIENTS
+            </button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+              <a class="dropdown-item" href="#">Plan Your Trip
+                </a>
+              <a class="dropdown-item" href="#">Online Consultation
+                </a>
+              <a class="dropdown-item" href="#">Visa
+                </a>
+              <a class="dropdown-item" href="#">Apollo Insurance</a>
+            </div>
+          </div>
+          <div class="btn-group" role="group">
+            <button id="btnGroupDrop1" type="button" class="btn btn-white dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              HOSPITALS
+            </button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+              <a class="dropdown-item" href="#">Apollo Clinics</a>
+              <a class="dropdown-item" href="#">Covid 19 Vaccination Centers</a>
+            </div>
+          </div>
+          <div class="btn-group" role="group">
+            <button id="btnGroupDrop1" type="button" class="btn btn-white dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             ACADEMIC&RESEARCH
+            </button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+              <a class="dropdown-item" href="#">Courses</a>
+              <a class="dropdown-item" href="#">Academics</a>
+              <a class="dropdown-item" href="#">Clinical Research</a>
+              <a class="dropdown-item" href="#">Honour List</a>
+              <a class="dropdown-item" href="#">Apollo Torch- Alumini Network</a>
+              <a class="dropdown-item" href="#">The Apollo University-Chittoor</a>
+              <a class="dropdown-item" href="#">Apollo Knowledge Series</a>
+              <a class="dropdown-item" href="#"> New In Medicine</a>
+            </div>
+          </div>
+          <div class="btn-group" role="group">
+            <button id="btnGroupDrop1" type="button" class="btn btn-white dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              CONTACT US
+            </button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+              <a class="dropdown-item" href="#">Post a Query</a>
+              <a class="dropdown-item" href="#">Apollo Lifeline</a>
+            </div>
+            <div class="btn-group" role="group">
+                <button id="btnGroupDrop1" type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  CORPORATE
+                </button>
+                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                  <a class="dropdown-item" href="#">Company Overview</a>
+                  <a class="dropdown-item" href="#">Corporate Policies</a>
+                  <a class="dropdown-item" href="#">Management</a>
+                  <a class="dropdown-item" href="#"> Corporate Governance</a>
+                  <a class="dropdown-item" href="#">Corporate Activity</a>
+                  <a class="dropdown-item" href="#">Careers</a>
+                  <a class="dropdown-item" href="#">News & Media</a>
+                  <a class="dropdown-item" href="#">Awards</a>
+                  <a class="dropdown-item" href="#">Investor Relations</a>
+                </div>
+          </div>
+    </div>
+    <hr>
+    <div class="row">
+        <img src="patientcare.jpg" height="150px" width="1550px" style="background-color: rgb(57, 125, 227);filter:opacity(0.4);">
+        <h1 class="caption" style="position:absolute;top:38%;left:40%;bottom:20%transform: translate(-50%,-50%);color: black;font: size 30px;">PATIENT CARE</h1>
+    </div>
+    <br>
+    <br>
+    <div class="conatiner">
+      <div class="row" style="font-family: Georgia, 'Times New Roman', Times, serif;">
+        <h6>&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;Centre of Excellence— Cutting Edge Speciality Clinical Care</h6>
+      </div>
+      <hr>
+    </div>
+    <br>
+   <div class="row">
+    <div class="col" >
+    <img  src="neuroscience.jpg" height="200px" width="250px">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="caption" href="#" style="font-size: medium;font-family: 'Times New Roman', Times, serif;color: palevioletred">NEUROSCIENCE</a>
+  </div>
+    <div class="col">
+    <img src="criticalcare.png" height="200px" width="250px">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="caption" href="#" style="font-size: medium;font-family: 'Times New Roman', Times, serif;color: palevioletred">CRTICAL CARE</a>
+  </div>
+  <div class="col">
+    <img src="heart.png" width="250px" height="200px">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="caption" href="#" style="font-size: medium;font-family: 'Times New Roman', Times, serif;color: palevioletred">HEART</a>
+  </div>
+  <div class="col">
+    <img src="cancer_care.png" width="250px" height="200px">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="caption" href="#" style="font-size: medium;font-family: 'Times New Roman', Times, serif;color: palevioletred">CANCER CARE</a>
+  </div>
+  <div class="col">
+    <img src="diabetes.png" width="250px" height="200px">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="caption" href="#" style="font-size: medium;font-family: 'Times New Roman', Times, serif;align-items: center;color: palevioletred">DIABETES</a>
+  </div>
+   </div>
+   <br>
+   <br>
+  <div class="row">
+    <div class="col" >
+    <img  src="preventivemedicine.png" height="200px" width="250px">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="caption" href="#" style="font-size: medium;font-family: 'Times New Roman', Times, serif;align-items: center;color: palevioletred">PREVENTIVE MEDICINE</a></div>
+    <div class="col">
+    <img  src="transplant.png" height="200px" width="250px">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="caption" href="#" style="font-size: medium;font-family: 'Times New Roman', Times, serif;color: palevioletred">ORGAN TRANSPLANT</a>
+  </div>
+  <div class="col">
+    <img src="gastroenterlogy.png" width="250px" height="200px">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="caption" href="#" style="font-size: medium;font-family: 'Times New Roman', Times, serif;color: palevioletred">GASTROENTEROLOGY</a>
+  </div>
+  <div class="col">
+    <img src="orthopedic.jpg" width="250px" height="200px">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="caption" href="#" style="font-size: medium;font-family: 'Times New Roman', Times, serif;color: palevioletred">ORTHOPEDIC</a>
+  </div>
+  <div class="col">
+    <img src="bariatricsurgery.png" width="250px" height="200px">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="caption" href="#" style="font-size: medium;font-family: 'Times New Roman', Times, serif;color:palevioletred">BASTRIC SURGERY</a>
+  </div>
+   </div>
+   <BR>
+    <br>
+    <h6 style="font-family: Georgia, 'Times New Roman', Times, serif;">&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;Key Medical Procedures</h6>
+    <hr><br>
+    <p style="font-family: 'Times New Roman', Times, serif;font-size: medium;">&nbsp;&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;Apollo Hospitals has consistently led game-changing developments in healthcare by bringing to the people, the latest innovations in key medical specialities and superspecialities on par with the West. We highlight in this section some of the latest procedures, services and therapies that Apollo hospitals provides, in keeping with the tradition of providing outstanding healthcare of international standards.</p>
+    <br>
+    
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-secondary" ><a href="#" style="color: black;">Know More &#8594;</a></button>
+    <br>
+    <br>
+    <br>
+    <h6 style="font-family: Georgia, 'Times New Roman', Times, serif;">&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  Service Excellence</h6>
+    
+    <hr>
+    <br>
+  <p>&nbsp;&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;&nbsp;&nbsp;Service Excellence at Apollo Hospitals is must do imperative. Apollo Hospitals benchmarks with the best among the world’s service organizations to create a culture of Patient Engagement with a service vision of “Offering Care beyond Compare”. Our biggest asset is our engaged workforce that takes pride in their work and ensures that every transaction is converted into memorable experience for our Patients.</p>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-secondary" ><a href="#" style="color: black;">Know More &#8594;</a></button>
+    <br>
+    <br>
+    <br>
+    <h6 style="font-family: Georgia, 'Times New Roman', Times, serif;">&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;Six Pillars That Drive Service Culture In Apollo Hospitals</h6> 
+    <br>
+    <div class="container" style="font-family: 'Times New Roman', Times, serif;font-size: medium;">
+      <div class="row">
+        <div class="col" style="border: 1px solid black;">
+          <p></p>
+          Voice of Customer Process
+          <p></p>
+        </div>&nbsp;&nbsp;&nbsp;
+        <div class="col" style="border: 1px solid black;">
+          <p></p>
+          Centralized Post Discharge Calling
+          <p></p>
+        </div>&nbsp;&nbsp;&nbsp;
+        <div class="col" style="border: 1px solid black;">
+          <p></p>
+          Tender Loving Care
+          <p></p>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col" style="border: 1px solid black;">
+          <p></p>
+          Dial 30
+          <p></p>
+        </div>&nbsp;&nbsp;&nbsp;
+        <div class="col" style="border: 1px solid black;">
+          <p></p>
+          Service Standards
+          <p></p>
+        </div>&nbsp;&nbsp;&nbsp;
+        <div class="col" style="border: 1px solid black;">
+          <p></p>
+          Human Sigma
+          <p></p>
+        </div>
+      </div>
+    </div>
+    <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-secondary" ><a href="#" style="color: black;">Know More &#8594;</a></button>
+    <br>
+    <br>
+    <br>
+    <div class="conatiner-fluid" style="font-family: 'Times New Roman', Times, serif;font-size: medium;background-color: rgb(15, 50, 138);">
+      <div class="container">
+      <div class="row">
+        <div class="col">
+          <p></p>
+          <p></p>
+          <p></p>
+          <a href="#" style="color: white;"><abbr title="Book Doctor Appointment" style="font-size: 20px;"><b>Book Appointment</b></abbr></a>
+           <p style="color: white;">Choose by name, specialty, city and more.</p>
+          <p></p>
+        </div>&nbsp;&nbsp;
+        <div class="col">
+          <p></p>
+          <p></p>
+          <a href="#" style="color: white;"><abbr title="Consult Online" style="font-size: 20px;"><b>
+            Consult Online</b>
+            </abbr></a>
+           <p style="color: white;">
+            Talk to a doctor online</p>
+          <p></p>
+        </div>&nbsp;&nbsp;
+        <div class="col">
+          <p></p>
+          <p></p>
+          <a href="#" style="color: white;"><abbr title="Consult Online" style="font-size: 20px;">
+          <b> Buy Medicines</b>
+            </abbr></a>
+           <p style="color: white;">
+            Order online</p>
+          <p></p>
+        </div>
+        <div class="col">
+          <p></p>
+          <p></p>
+          <a href="#" style="color: white;"><abbr title="Book A Health Check" style="font: size 20px;;">     
+          <b>Book Health Check</b>
+            </abbr></a>
+           <p style="color: white;">
+            Choose by location, Age, Gender & more</p>
+          <p></p>
+        </div>
+        <div class="col">
+          <p></p>
+          <p></p>
+          <a href="#" style="color: white;"><abbr title="Find Hospitals" style="font-size:20px">
+          <b>Find Hospital</b>
+            </abbr></a>
+           <p style="color: white;">
+Find Directions & contact details</p>
+          <p></p>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+    
+    <div class="conatiner-fluid" style="font-size: small;font-family: 'Times New Roman', Times, serif;background-color: rgb(57, 125, 227);color:white">
+      <div class="container">
+    <br>
+        <div class="row">
+        <div class="col">
+         <h5><abbr title="Patient Care" ><b>Patient Care</b></abbr></h5>
+         <h6><abbr title="Find A Doctor">Find A Doctor</abbr></h6>
+         <h6><abbr title="Medical Services">Medical Services</abbr></h6>
+         <h6><abbr title="Patient Testimonials">Patient Testimonials</abbr></h6>
+         <h6><abbr title="Value Added Services">Value Added Services</abbr></h6>
+         <h6><abbr title="Pay Online">Pay Online</abbr></h6>
+         <h6><abbr title="Find A Doctor">Apollo Hospital</abbr></h6>
+         <br>
+         <br>
+         <h5><abbr title="International Hospital"><b>International Hospital</b></abbr></h5>
+        <h6><abbr title="Find A Doctor">About Apollo</abbr></h6>
+        <h6><abbr title="Find A Doctor">Hospitals</abbr></h6>
+        </div>
+        <div class="col">
+          <h5><abbr title="Centers of Excellence"><b>Centers of Excellence</b></abbr></h5>
+        <h6><abbr title="Orthopaedics">Orthopaedics</abbr></h6>
+      <h6><abbr title="Nephrology & Urology">Nephrology & Urology</abbr></h6>
+    <h6><abbr title="Bariatric Surgery">Bariatric Surgery</abbr></h6>
+  <h6> <abbr title="Cardiology">Cardiology
+        </abbr></h6>
+          <h6><abbr title="Pulmonology">Pulmonology
+            </abbr></h6>
+          <h6><abbr title="Gastroenterology">Gastroenterology
+            </abbr></h6>
+          <h6> <abbr title="Spine Surgery">Spine Surgery
+            </abbr></h6>
+          <h6><abbr title="Oncology">Oncology
+            </abbr></h6>
+          <h6><abbr title="Neurology & Neurosurgery">Neurology & Neurosurgery
+            </abbr></h6>
+          <h6><abbr title="Organ Transplantation">Organ Transplantation
+            </abbr></h6>
+          <h6><abbr title="Robotic Surgery">Robotic Surgery
+            </abbr></h6>
+          <h6> <abbr title="Preventive Health Check Up">Preventive Health Check Up
+            </abbr></h6>
+          <h6><abbr title="Apollo ProHealth">Apollo ProHealth
+            </abbr></h6>
+          <h6> <abbr title="Emergency Care">Emergency Care
+            </abbr></h6>
+          <h6><abbr title="Ear,Nose And Throat">Ear,Nose And Throat
+          </abbr></h6>
+          <h6><abbr title="Vascular Surgery">Vascular Surgery
+            </abbr></h6>
+          <h6> <abbr title="Pediatrics">Pediatrics
+            </abbr></h6>
+          <h6><abbr title="Dermatology">Dermatology
+            </abbr></h6>
+          <h6><abbr title="Obstetrics And Gynaecology">Obstetrics And Gynaecology</abbr></h6>
+        </div>
+        <div class="col">
+          <h5><abbr title="Medical Procedures"><b>Medical Procedures</b></abbr></h5>
+        <h6><abbr title="Proton Therapy">Proton Therapy For Cancer Treatment
+            </abbr></h6>
+          <h6><abbr title="Cosmetic And Plastic Surgery">Cosmetic And Plastic Surgery
+            </abbr>
+          <h6><abbr title="Bone Marrow Transplant">Bone Marrow Transplant
+            </abbr>
+          <h6> <abbr title="Oral And Maxillofacial Surgery">Oral & Maxillofacial Surgery
+            </abbr>
+          <h6> <abbr title="Hand MicroSurgery">Hand MicroSurgery
+            </abbr>
+          <h6><abbr title="G Scan">G Scan &#8209; Open Standing MRI Scan
+           </abbr>
+          <h6><abbr title="Hip Arthroscopy">Hip Arthroscopy
+           </abbr>
+          <h6><abbr title="Minimally Invasive Cardiac Surgery">Minimally Invasive Cardiac Surgery
+            </abbr>
+          <h6><abbr title="Knee Replacement Surgery">Knee Replacement Surgery
+            </abbr>
+          <h6><abbr title="Cochlear Implant Surgery">Cochlear Implant Surgery</abbr>
+        </div>
+        <div class="col">
+          <h5><abbr title="Corporate"><b>Corporate</b></abbr></h5>
+        <h6><abbr title="Company Overview">Company Overview
+            </abbr></h6>
+          <h6><abbr title="Our Doctors Achieve">Our Doctors Achieve
+            </abbr></h6>
+          <h6><abbr title="The Apollo Ethos">The Apollo Ethos
+            </abbr></h6>
+          <h6><abbr title="The Apollo Story">The Apollo Story
+            </abbr></h6>
+          <h6><abbr title="Management">Management
+            </abbr></h6>
+          <h6><abbr title="Investor Relations">Investor Relations
+            </abbr></h6>
+          <h6><abbr title="Investor Presentation">Investor Presentation
+            </abbr></h6>
+          <h6><abbr title="Initiatives">Initiatives
+            </abbr></h6>
+          <h6><abbr title="Awards And Accolades">Awards & Accolades
+            </abbr></h6>
+          <h6><abbr title="Career">Career</abbr></h6>
+        </div>
+        <div class="col">
+          <h5><abbr title="Academics And Research"><b>Academics & Research</b></abbr></h5>
+          <h6><abbr title="Courses">Courses
+            </abbr></h6>
+          <h6><abbr title="Academics">Academics
+            </abbr></h6>
+          <h6><abbr title="Clinical Research">Clinical Research
+            </abbr></h6>
+          <h6><abbr title="Honors List">Honors List
+            </abbr></h6>
+          <h6><abbr title="Apollo Torch: Alumni Network">Apollo Torch: Alumni Network
+            </abbr></h6>
+          <h6><abbr title="Web Broadcasts">Web Broadcasts
+            </abbr></h6>
+          <h6><abbr title="Collaborative Forums">Collaborative Forums
+            </abbr></h6>
+          <h6><abbr title="What&apos;s New">What&apos;s New
+            </abbr></h6>
+          <h6><abbr title="News And Media">News & Media</abbr></h6>
+          <br>
+          <br>
+          <h5><abbr title="News And Media">News & Media</abbr></h5>
+          <h6><abbr title="News">News</abbr></h6>
+        <h6><abbr title="Events">Events
+          </abbr></h6>
+        <h6><abbr title="Interviews">Interviews</abbr></h6>
+        <h6><abbr title="Watch Our Videos">Watch Our Videos
+          </abbr></h6>
+        <h6><abbr title="Media Contacts">Media Contacts
+         </abbr></h6><h6><abbr title="Apollo Hospitals Review">Apollo Hospitals Review
+          </abbr></h6>
+        </div>
+        <div class="col">
+          <h5><abbr title="Hospitals"><b>Hospitals</b></abbr></h5>
+          <h6><abbr title="">Hospitals In India
+            </abbr></h6>
+          <h6><abbr title="">International Hospitals
+            </abbr></h6>
+          <h6><abbr title="">Apollo Clinics
+           </abbr></h6>
+          <h6><abbr title="">Apollo Clinics
+            </abbr></h6>
+          <h6><abbr title="">Reach Hospitals
+            </abbr></h6>
+            <h6><abbr title="">Apollo Cradle
+              </abbr></h6>
+              <h6><abbr title="Contact Us">Contact Us</abbr></h6>
+          <br>
+          <br>
+          <h5><abbr title="Contact Us"><b>Contact Us</b></abbr></h5>
+          <h6><abbr title="Post A Query">Post A Query
+            </abbr></h6>
+          <h6><abbr title="Consult Doctors Online">Consult Doctors Online
+            </abbr></h6>
+          <h6><abbr title="Book Physical Appointment">Book Physical Appointment
+            </abbr></h6>
+          <h6><abbr title="Give Your Feedback">Give Your Feedback
+            </abbr></h6>
+          <h6><abbr title="Apollo Lifeline">Apollo Lifeline
+            </abbr></h6>
+            <h6><abbr title="Blog">Blog</abbr></h6>
+          <br>
+          <br>
+          <h5><abbr title="Blog"><b>Blog</b></abbr></h5>
+          <h6><abbr title="Health Library">Health Library
+            </abbr></h6>
+          <h6><abbr title="Covid 19 Updates">Covid 19 Updates
+            </abbr></h6>
+          <h6><abbr title="COVID-19 FAQs">COVID-19 FAQs
+            </abbr></h6>
+          <h6><abbr title="COVID-19 Vaccination">COVID-19 Vaccination
+            </abbr></h6>
+          <h6><abbr title="COVID-19 New Symptoms">COVID-19 New Symptoms</abbr></h6>
+        </div>
+        </div>
+        
+        </div><hr>
+        <br>
+        <div class="row">
+          <div class="col-sm-4">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fa fa-instagram"></span>
+            &nbsp;&nbsp;&nbsp;<span class="fa fa-twitter"></span>
+        &nbsp;&nbsp;&nbsp;<span class="fa fa-facebook"></span>
+        &nbsp;&nbsp;&nbsp;<span class="fa fa-linkedin">
+            &nbsp;&nbsp;&nbsp;<span class="fa fa-youtube"></span>
+          </div>
+          <div class="col-sm-8" style="font-family: 'Times New Roman', Times, serif;">
+            <a href="#" style="color: white;font-family: 'Times New Roman', Times, serif;" >Privacy Policy&nbsp;&nbsp;</a>|
+            <a href="#" style="color: white;font-family: 'Times New Roman', Times, serif;">Disclaimer&nbsp;&nbsp;</a>|
+            <a href="#" style="color: white;font-family: 'Times New Roman', Times, serif;">Contact&nbsp;&nbsp;</a>|
+            <a href="#" style="color: white;font-family: 'Times New Roman', Times, serif;">Sitemap</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#" style="color: white;font-family: 'Times New Roman', Times, serif;">&copy;2023 Apollo Hospital EnterpriseLtd.All Rights Reserved</a>
+          </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div class="container" style="font-family: 'Times New Roman', Times, serif;font-size: medium;">
+          <div class="row">
+            <div class="col" style="border: 1px solid  rgb(57, 125, 227);">
+              <p></p>
+              <u>OUR STENTS PRICING</u>
+              <p></p>
+            </div>
+            <div class="col" style="border: 1px solid  rgb(57, 125, 227);">
+              <p></p>
+              <u>TOTAL KNEE REPLACEMENT IMPLANTS PRICING</u>
+              <p></p>
+            </div>
+            <div class="col" style="border: 1px solid  rgb(57, 125, 227);">
+              <p></p>
+              <u>TRANSPLANT DISCLAIMER</u>
+              <p></p>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col" style="border: 1px solid  rgb(57, 125, 227);">
+              <p></p>
+              <u>RECRUITMENT DISCLAIMER</u>
+              <p></p>
+            </div>
+            <div class="col" style="border: 1px solid  rgb(57, 125, 227);">
+              <p></p>
+              <u>COVID-19 RT-PCR TEST</u>
+              <p></p>
+            </div>
+            <div class="col" style="border: 1px solid  rgb(57, 125, 227);">
+              <p></p>
+              <u>COVID-19 VACCINATION CENTERS</u>
+              <p></p>
+            </div>
+          </div>
+        </div>
+    </div>
+    <br>
+    <div class="container" >
+    <p style="border: 1px inset rgb(210, 207, 207);background-color:rgb(210, 207, 207);align-items: center;">
+     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Our share price  May 12, 2023 ↑ BSE Closing: 4604.10 ↓ NSE Closing: 4605.25</p>
+    </div>
+  </body>
+</html>
